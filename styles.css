@@ -180,10 +180,11 @@ main{
 
 /* ---==== Home Section ====--- */
 #home{
-  height: 100vh;
+  height: calc(100vh - 80px);
   width: 100%;
   background-image: url(1background.jpeg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
   flex-direction: column;
