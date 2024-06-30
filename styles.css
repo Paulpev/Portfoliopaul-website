@@ -185,7 +185,6 @@ main{
   background-image: url(1background.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
