@@ -43,6 +43,7 @@ header .profile img{
   width: 150px;
   border-radius: 40%;
   border: 4px solid white;
+  margin-top: 40%
 }
 
 header .profile h1{
@@ -81,7 +82,7 @@ header nav ul li a{
   display: inline-block;
   text-decoration: none;
   padding: 7px 10px;
-  margin: 7px 0;
+  margin: 10px 0;
   color: lightgray;
   font-weight: 400;
   font-size: 18px;
@@ -107,9 +108,9 @@ header .footer{
   text-align: center;
   background-color: rgb(177, 12, 94); 
   width: 300px;
-  color: lightgray;
+  color: white;
   font-size: 14px;
-  letter-spacing: 0.6px;
+  letter-spacing: 1.6px;
   padding: 15px;
   position: fixed;
   bottom: 0;
@@ -128,8 +129,8 @@ header .footer p a{
   top: 25px;
   right: 25px;
   font-size: 30px;
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   color: white;
   background-color:  rgb(177, 12, 94); 
   text-align: center;
