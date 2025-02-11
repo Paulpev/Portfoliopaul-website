@@ -151,6 +151,11 @@ header .footer p a{
   }
   #MenuBtn{
     display: block;
+    font-size: 40px;
+    bottom: 2px;
+    line-height: 52px;
+    width: 55px;
+    height: 55px;
   }
 
   /* Header toggle */
@@ -885,6 +890,151 @@ main{
   transition: background 0.15s,
   color 0.15s;
 }
+
+
+/* Footer section start */
+.top-head {
+  position: relative;
+  align-items: center;
+  background: linear-gradient(60deg,
+  rgb(177, 12, 94) 0%,
+  rgb(177, 12, 94) 100%
+  );
+  color: white;
+}
+       
+.inner-header {
+   height: 6vh;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+.follow a{
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 1.2rem;
+  margin-right: 25px;
+  text-decoration: none;
+}
+
+.inner-header.flex{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 25px;
+  font-size: 18px;
+  color: rgb(23, 22, 22);
+}
+
+.inner-header.flex a{
+  color: rgb(67, 55, 55);
+  margin-left: 1rem;
+}
+
+
+.inner-header.flex button{
+  border: 0.1rem solid white; 
+  background: none;
+  transition: background 0.15s,
+  color 0.15s;
+  color: rgb(77, 75, 75);
+  font-size: 16px;
+  padding: 9px;
+  cursor: pointer;
+}
+
+.inner-header.flex button:hover{
+  background-color: darkcyan;
+  color: white;
+}
+
+.inner-header.flex a:hover{
+  color: white;
+}
+ 
+.flex{
+   /* flexbox for container */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+ 
+ .waves {
+   position: relative;
+   width: 100%;
+   height: 15vh;
+   margin-bottom: -7px;
+}
+ .content{
+   position: relative;
+   height: 20vh;
+   text-align: center;
+   background-color: white;
+}
+
+.content p {
+  font-family:  'Roboto', sans-serif;
+ font-size: 17px;
+ font-weight: 12px;
+ color: #333333;
+}
+
+ /* let's start making animation */
+ 
+ .parallax> use{
+   animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+ 
+ .parallax> use:nth-child(1){
+   animation-delay: -2s;
+   animation-duration: 7s;
+}
+ 
+ .parallax> use:nth-child(2){
+   animation-delay: -3s;
+   animation-duration: 10s;
+}
+ 
+ .parallax> use:nth-child(3){
+   animation-delay: -4s;
+   animation-duration: 13s;
+}
+ 
+ .parallax> use:nth-child(4){
+   animation-delay: -5s;
+   animation-duration: 20s;
+}
+ 
+ @keyframes move-forever {
+   0%{
+     transform: translate3d(-90px,0,0);
+   }
+   100%{
+     transform: translate3d(85px, 0, 0);
+   }
+}
+ 
+ /* let's make it responsive friendly for mobile view */
+ @media(max-width: 600px){
+   .waves{
+     height: 50px;
+     min-height: 40px;
+   }
+   .content{
+     height: 30vh;
+ 
+   }
+   h1{
+     font-size: 18px;
+   }
+}
+
+
+
+
+
+  
+
 
 
 
