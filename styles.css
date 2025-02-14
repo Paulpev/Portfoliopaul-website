@@ -18,6 +18,7 @@
   --iconsColor: #2c2f3f;
   --textColor: #353535;
   --bgColor: #f7f7f7;
+  --maincolor: #B10C5E;
 }
 
 /* ==== Header Start ==== */
@@ -688,7 +689,7 @@ main{
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 2px solid var(--themeColor);
+  border: 2px solid var(--maincolor);
   text-align: center;
   line-height: 47px;
   font-size: 20px;
@@ -696,7 +697,7 @@ main{
   transition: 0.5s;
 }
 #contact .contact-row .contact-left .icon-box:hover .icon i{
-  background-color: var(--themeColor);
+  background-color: var(--maincolor);
   color: var(--bgColor);
 }
 #contact .contact-row .contact-left .icon-box .info h4{
@@ -739,12 +740,12 @@ main{
 }
 #contact .contact-row .contact-right form input:focus,
 #contact .contact-row .contact-right form textarea:focus{
-  border: 2px solid var(--themeColor);
+  border: 2px solid var(--maincolor);
 }
 #contact .contact-row .contact-right form input[type=submit]{
-  background-color: var(--themeColor);
+  background-color: var(--maincolor);
   color: var(--bgColor);
-  border: 2px solid var(--themeColor);
+  border: 2px solid var(--maincolor);
   font-size: 17px;
   font-weight: 400;
   cursor: pointer;
@@ -915,6 +916,7 @@ main{
   color: #fff;
   margin-right: 12px;
   margin-left: 90px;
+  margin-top: 8px;
   text-decoration: none;
 }
 
