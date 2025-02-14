@@ -743,9 +743,9 @@ main{
   border: 2px solid var(--maincolor);
 }
 #contact .contact-row .contact-right form input[type=submit]{
-  background-color: var(--themecolor);
+  background-color: var(--themeColor);
   color: var(--bgColor);
-  border: 2px solid var(--maincolor);
+  border: 2px solid var(--themeColor);
   font-size: 17px;
   font-weight: 400;
   cursor: pointer;
