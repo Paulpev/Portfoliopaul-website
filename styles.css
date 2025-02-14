@@ -743,7 +743,7 @@ main{
   border: 2px solid var(--maincolor);
 }
 #contact .contact-row .contact-right form input[type=submit]{
-  background-color: var(--maincolor);
+  background-color: var(--themecolor);
   color: var(--bgColor);
   border: 2px solid var(--maincolor);
   font-size: 17px;
@@ -916,7 +916,7 @@ main{
   color: #fff;
   margin-right: 12px;
   margin-left: 90px;
-  margin-top: 8px;
+  margin-top: 12px;
   text-decoration: none;
 }
 
