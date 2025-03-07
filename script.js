@@ -1,21 +1,31 @@
-// Header toggle
 
- let MenuBtn = document.getElementById('MenuBtn')
+    // Header toggle
 
- MenuBtn.addEventListener('click', function(e) {
+ let MenuBtn = document.getElementById('MenuBtn');
+ let navLinks = document.querySelectorAll('nav ul li a');
+
+ MenuBtn.addEventListener('click', function() {
         document.querySelector('body').classList.toggle('mobile-nav-active');
-        this.classList.toggle('fa-xmark')
- })
+        this.classList.toggle('fa-xmark');
+ });
+
+ // close menu when a nav link is clicked
+ navLinks.forEach(link => {
+       link.addEventListener('click', function () {
+              document.querySelector('body').classList.remove('mobile-nav-active');
+              MenuBtn.classList.remove('fa-xmark');
+       });
+ });
 
  // typing Effect
 
- let typed = new typed('.auto-input', {
-        strings: [`Front-End Developer!', 'Freelancer!', 'UI Designer!', 'Youtuber!`],
+ let typed = new Typed('.auto-input', { // "Typed" should be capitalized 
+        strings: ['Front-End Developer!', 'Cybersecurity!', 'UI Designer!', 'Youtuber!'], // Fixed syntax
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 2000,
         loop: true,
-})
+});
 
 // Active link State On Scroll
 
