@@ -156,6 +156,8 @@ header .footer p a{
   }
   header nav ul li a{
     font-size: 18px;
+    font-weight: bold;
+    color: white;
     padding: 3px 5px;
   }
 
