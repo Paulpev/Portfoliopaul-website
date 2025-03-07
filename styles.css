@@ -147,9 +147,18 @@ header .footer p a{
   header{
     left: -300px;
   }
-  header .footer{
-    left: -300px;
+  header nav ul{
+    text-align: center;
+    padding: 8px;
   }
+  header nav ul li{
+    padding: 8px;
+  }
+  header nav ul li a{
+    font-size: 18px;
+    padding: 3px 5px;
+  }
+
   #MenuBtn{
     display: block;
     font-size: 40px;
@@ -158,6 +167,8 @@ header .footer p a{
     width: 55px;
     height: 55px;
   }
+}
+
 
   /* Header toggle */
   .mobile-nav-active header{
