@@ -20,7 +20,7 @@
  // typing Effect
 
  let typed = new Typed('.auto-input', { // "Typed" should be capitalized 
-        strings: ['Front-End Developer!', 'Cybersecurity!', 'UI Designer!', 'Youtuber!'], // Fixed syntax
+        strings: ['Front-End Developer!', 'Cybersecurity! Blue Team beginner', 'UI Designer!', 'House-Painter!'], // Fixed syntax
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 2000,
