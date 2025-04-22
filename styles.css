@@ -21,6 +21,10 @@
   --maincolor: #B10C5E;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* ==== Header Start ==== */
 header{
   height: 100vh;
@@ -195,7 +199,7 @@ main{
 
 @media only screen and (max-width: 1050px){
   main{
-    margin-left: 0;
+    margin-left: 300px;
   }
 }
 
