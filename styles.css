@@ -148,13 +148,9 @@ header .footer p a{
 }
 
 /* Mobile view */
-@media only screen and (max-width: 1049px) {
-  header {
+@media only screen and (max-width: 1050px){
+  header{
     left: -300px;
-  }
-
-  main {
-    margin-left: 0;
   }
   header nav ul{
     text-align: center;
@@ -201,13 +197,9 @@ main{
   transition: 0.3s;
 }
 
-@media only screen and (min-width: 1050px) {
-  header {
-    left: 0;
-  }
-
-  main {
-    margin-left: 300px;
+@media only screen and (max-width: 1050px){
+  main{
+    margin-left: 0;
   }
 }
 
