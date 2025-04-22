@@ -37,7 +37,7 @@ header{
   top: 0;
   bottom: 0;
   transition: 0.4s;
-  z-index: 99;
+  z-index: 1000;
 }
 header .profile{
   text-align: center;
@@ -200,7 +200,6 @@ main{
 @media only screen and (max-width: 1050px){
   main{
     margin-left: 0;
-    margin-right: 0;
   }
 }
 
