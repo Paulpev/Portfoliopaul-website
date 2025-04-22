@@ -148,9 +148,13 @@ header .footer p a{
 }
 
 /* Mobile view */
-@media only screen and (max-width: 1050px){
-  header{
+@media only screen and (max-width: 1049px) {
+  header {
     left: -300px;
+  }
+
+  main {
+    margin-left: 0;
   }
   header nav ul{
     text-align: center;
@@ -207,15 +211,6 @@ main{
   }
 }
 
-@media only screen and (max-width: 1049px) {
-  header {
-    left: -300px;
-  }
-
-  main {
-    margin-left: 0;
-  }
-}
 
 /* ---==== Home Section ====--- */
 #home{
