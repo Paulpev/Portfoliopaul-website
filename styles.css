@@ -8,7 +8,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 /* Gblobal variables*/
@@ -20,7 +19,9 @@
   --bgColor: #f7f7f7;
   --maincolor: #B10C5E;
 }
-
+ body {
+   overflow-x: hidden;
+ }
 
 /* ==== Header Start ==== */
 header{
