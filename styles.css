@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Pacifico&family=Poppins:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap');
 
 /* CSS Reset */
-
 *{
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 /* Gblobal variables*/
@@ -17,12 +17,12 @@
   --iconsColor: #2c2f3f;
   --textColor: #353535;
   --bgColor: #f7f7f7;
-  --maincolor: #B10C5E;
+  --maincolor: #B10C5E
 }
- body {
-   overflow-x: hidden;
-   margin: 0;
- }
+
+body {
+  overflow-x: hidden;
+}
 
 /* ==== Header Start ==== */
 aside{
@@ -36,11 +36,7 @@ aside{
   top: 0;
   bottom: 0;
   transition: 0.4s;
-  margin-left: -300px; /* hiddden by default */
-  z-index: 1000;
-}
-
-
+  z-index: 99;
 }
 aside .profile{
   text-align: center;
@@ -73,7 +69,7 @@ aside .profile .social-icons a{
   transition: 0.4s;
 }
 
-aside.profile .social-icons a:hover{
+aside .profile .social-icons a:hover{
   background-color: var(--themeColor);
 }
 
@@ -94,7 +90,6 @@ aside nav ul li a{
   color: lightgray;
   font-weight: 400;
   font-size: 18px;
-  color: white;
   letter-spacing: 0.6px;
 }
 
@@ -112,25 +107,9 @@ aside nav ul li .active i{
   color: var(--themeColor);
 }
 
-/* Footer */
-aside .footer{
-  text-align: center;
-  background-color: rgb(177, 12, 94); 
-  width: 300px;
-  color: white;
-  font-size: 14px;
-  letter-spacing: 1.6px;
-  padding: 15px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  transition: 0.4s;
-}
 
-aside .footer p a{
-  color: var(--themeColor);
-  text-decoration: none;
-}
+
+
 
 /* Mobile nav toggle */
 #MenuBtn{
@@ -138,8 +117,8 @@ aside .footer p a{
   top: 25px;
   right: 25px;
   font-size: 30px;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   color: white;
   background-color:  rgb(177, 12, 94); 
   text-align: center;
@@ -151,13 +130,11 @@ aside .footer p a{
 }
 
 /* Mobile view */
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1050px){
   aside{
-    margin-left: 0; /* Always visible on desktop */
-    position: static;
-    height: auto;
+    left: -300px;
   }
-aside nav ul{
+  aside nav ul{
     text-align: center;
     padding: 8px;
   }
@@ -166,8 +143,6 @@ aside nav ul{
   }
   aside nav ul li a{
     font-size: 18px;
-    font-weight: bold;
-    color: white;
     padding: 3px 5px;
   }
 
@@ -181,13 +156,12 @@ aside nav ul{
   }
 }
 
-
   /* Header toggle */
-  .mobile-nav-active header{
+  .mobile-nav-active aside{
     left: 0;
   }
-}
-.mobile-nav-active header .footer{
+
+.mobile-nav-active aside .footer{
   left: 0;
 }
 /* ==== Header END ==== */
