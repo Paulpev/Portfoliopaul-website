@@ -10,9 +10,6 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
-}
 /* Gblobal variables*/
 :root{
   --sideBGColor: #040b14;
@@ -28,7 +25,7 @@ body {
  }
 
 /* ==== Header Start ==== */
-header{
+aside{
   height: 100vh;
   width: 300px;
   padding: 15px 30px;
@@ -43,27 +40,26 @@ header{
   z-index: 1000;
 }
 
-header.active {
-  margin-left: 0; /* slide into view */
+
 }
-header .profile{
+aside .profile{
   text-align: center;
   margin: 10px 0;
 }
 
-header .profile img{
+aside .profile img{
   width: 150px;
   border-radius: 40%;
   border: 4px solid white;
   margin-top: 40%;
 }
 
-header .profile h1{
+aside .profile h1{
   color: white;
   font-weight: 600;
 }
 
-header .profile .social-icons a{
+aside .profile .social-icons a{
   display: inline-block;
   width: 36px;
   height: 36px;
@@ -77,20 +73,20 @@ header .profile .social-icons a{
   transition: 0.4s;
 }
 
-header .profile .social-icons a:hover{
+aside.profile .social-icons a:hover{
   background-color: var(--themeColor);
 }
 
 /* NavBar */
 
-header nav{
+aside nav{
   margin-top: 30px; 
 }
 
-header nav ul li{
+aside nav ul li{
   list-style: none;
 }
-header nav ul li a{
+aside nav ul li a{
   display: inline-block;
   text-decoration: none;
   padding: 7px 10px;
@@ -102,22 +98,22 @@ header nav ul li a{
   letter-spacing: 0.6px;
 }
 
-header nav ul li a i{
+aside nav ul li a i{
   margin-right: 10px;
   font-size: 20px;
   transition: 0.4s;
 }
 
-header nav ul li a:hover i{
+aside nav ul li a:hover i{
   color: var(--themeColor);
 }
 
-header nav ul li .active i{
+aside nav ul li .active i{
   color: var(--themeColor);
 }
 
 /* Footer */
-header .footer{
+aside .footer{
   text-align: center;
   background-color: rgb(177, 12, 94); 
   width: 300px;
@@ -131,7 +127,7 @@ header .footer{
   transition: 0.4s;
 }
 
-header .footer p a{
+aside .footer p a{
   color: var(--themeColor);
   text-decoration: none;
 }
@@ -156,19 +152,19 @@ header .footer p a{
 
 /* Mobile view */
 @media only screen and (max-width: 768px){
-  header{
+  aside{
     margin-left: 0; /* Always visible on desktop */
     position: static;
     height: auto;
   }
-  header nav ul{
+aside nav ul{
     text-align: center;
     padding: 8px;
   }
-  header nav ul li{
+  aside nav ul li{
     padding: 8px;
   }
-  header nav ul li a{
+  aside nav ul li a{
     font-size: 18px;
     font-weight: bold;
     color: white;
