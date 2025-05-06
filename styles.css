@@ -186,11 +186,11 @@ header .footer p a{
 
 
   /* Header toggle */
-  mobile-nav-active header{
+  .mobile-nav-active header{
     left: 0;
   }
 }
-mobile-nav-active header .footer{
+.mobile-nav-active header .footer{
   left: 0;
 }
 /* ==== Header END ==== */
