@@ -37,7 +37,7 @@ header{
   left: 0;
   top: 0;
   bottom: 0;
-  transition: margin-left 0.3s ease;
+  transition: 0.4s;
   margin-left: -300px; /* hiddden by default */
   z-index: 1000;
 }
@@ -154,11 +154,11 @@ header .footer p a{
 }
 
 /* Mobile view */
-@media only screen and (max-width: 1050px){
+@media only screen and (max-width: 768px){
   header{
     margin-left: 0; /* Always visible on desktop */
     position: static;
-    height: auto
+    height: auto;
   }
   header nav ul{
     text-align: center;
